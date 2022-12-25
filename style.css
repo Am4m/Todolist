@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+::-webkit-scrollbar { 
+    width: 0.5em; 
+    height: 3px;
+}
+::-webkit-scrollbar-track-piece { 
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    height: 50px; 
+    background-color:#666; border-radius: 1em;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: roboto;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 4rem);
+    margin: 2rem 0;
+}
+
+.box {
+    width: 50%;
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 25px;
+}
+
+.header {
+    display: flex;
+    padding: .5rem 1rem;
+    flex-direction: column;
+    border-top: none;
+    border-radius: 25px;
+}
+
+.header h1 {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    color: rgb(211, 211, 211);
+    text-align: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+}
+
+.todos-wrapper {
+    border-bottom: 1px solid rgb(211, 211, 211);
+    height: calc(100vh - 13rem);
+    margin: 0 1rem;
+}
+
+.todos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+    gap: 1rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 14rem);
+}
+
+.todos * {
+    color: rgb(211, 211, 211);
+}
+
+.todo {
+    padding: .5rem 1rem;
+    background-color: rgb(54, 54, 54);
+}
+
+.title {
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+}
+
+.date {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.date p {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+nav p {
+    color: rgb(211, 211, 211);
+    cursor: pointer;
+    font-weight: bold;
+}
